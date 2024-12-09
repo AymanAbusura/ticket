@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f7fa;
+  color: #333;
+}
+
+.app {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-icon {
+  width: 50px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.filters {
+  width: 250px;
+}
+
+.filter-wrapper {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filter-wrapper > div {
+  margin-bottom: 15px;
+}
+
+.filter-wrapper > div:last-child {
+  margin-bottom: 0;
+}
+
+.ticket {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.ticket-logo {
+  width: 200px;
+}
+
+.buy-button {
+  background-color: #ff6d00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #e65c00;
+}
+
+.ticket-info {
+  width: 100%;
+  border-left: 1px solid #eceff1;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.time {
+  width: 100px;
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #000;
+}
+
+.location {
+  color: #000;
+}
+
+.date {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.stops {
+  display: inline-block;
+  text-align: center;
+  margin: 0 10px;
+  color: #555;
+}
+
+.stops span {
+  margin-right: 15px;
+  font-size: 10px;
+  color: #8f9192;
+  text-transform: uppercase;
+}
+
+.stops hr {
+  display: inline-block;
+  vertical-align: middle;
+  width: 63%;
+  margin: 0 10px;
+  border: 1px solid #dee0e1;
+}
+
+.stops img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+}
+
+.filter {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.filter h4 {
+  margin-bottom: 10px;
+}
+
+.filter label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.filter label:hover {
+  background: #f1fcff;
+}
+
+.hover-text {
+  display: none;
+  margin-left: 5px;
+  color: gray;
+  font-size: 14px;
+}
+
+label:hover .hover-text {
+  display: inline;
+  margin-left: 50px;
+  color: #37a1f4;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  border-color: #4ba3ea;
+  background-color: white;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #4ba3ea;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.currency-selector {
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.currency-selector h4 {
+  margin-bottom: 10px;
+}
+
+.currency-buttons button {
+  border: 0.3px solid #888;
+  padding: 10px 15px;
+  cursor: pointer;
+  background: #fff;
+}
+
+.currency-buttons button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.currency-buttons button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.currency-buttons button:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+.currency-buttons button.active {
+  background: #007bff;
+  color: #fff;
+}
+
+.currency-buttons button:hover {
+  background: lightblue;
+  opacity: 0.8;
+  color: blue;
+  border: 1px solid lightblue;
+  font-color: lightblue;
+}
+
+.currency-buttons button.active {
+  background: #007bff;
+  color: #fff;
+}
+
+.currency-buttons button:hover {
+  background: #007bff;
+  color: #fff;
+}
